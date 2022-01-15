@@ -10,7 +10,21 @@ body{
     grid-template-columns: repeat(2,1fr);
  
 }
-a{  text-decoration: none;
+.font-size{
+    font-size: 40px;
+}
+.animated{
+    width: 440px;
+    height: 414px;
+    border: 3px solid black;
+    transition: width 1s ,height 1s, transform 5s ;
+}
+.animated:hover{
+    width: 200px;
+    height: 500px;
+    transform: rotate(360deg);
+}
+.box{  text-decoration: none;
     background-color:  #E02C6D;
     color:  white;
     width: 196px;
@@ -40,12 +54,12 @@ a{  text-decoration: none;
     background-color: white;
     padding-top: 5px;
 }
-
-
 .popular-collection .details img{
     width: 300px;
     height: 256px;
 }
+
+
 .rating{
     display: flex;
     align-items: center;
@@ -65,8 +79,14 @@ font-size: 16px;
 p {
     margin: 0em;
   }
-
+.right{
+    color: #E02C6D;
+    text-align: right;
+  
+    
+}
 footer{
+    text-align: center;
     background-color: #0A0826;
     color: white ;
     width: 1440px;
@@ -76,6 +96,7 @@ footer{
     font-size: xx-small;
 
 }
+
 @media only screen and (max-width: 688px){
     .flex{
         grid-template-columns: repeat(1, 1fr);
@@ -83,6 +104,7 @@ footer{
     .grid{
         grid-template-columns: repeat(1 ,1fr);
     }  
+	
 }
 @media only screen and (min-width: 689px) and (max-width:992px){
     .flex{
