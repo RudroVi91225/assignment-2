@@ -2,36 +2,43 @@
 body{
     font-family: 'Poppins', sans-serif;
     background: #FFFFFF;
+
 }
 
 .flex{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
  
 }
-.size{
-    width: 582px;
-    height: 320px;
+a{  text-decoration: none;
+    background-color:  #E02C6D;
+    color:  white;
+    width: 196px;
+    height: 44px;
+     padding:10px, 24px, 10px, 24px ;
+     border-radius: 5px;
+
 }
+
 .flex img{
     width: 440px;
     height: 414px;
-}
-.main{
-    padding left: 65px;
 }
 .align{
     text-align: center;
 }
 
 .grid{
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(3 ,1fr);
+   
+
 }
 .popular-collection{
+    display: flex;
+    justify-content: center;
     background-color: white;
-    width: 329px;
-    height: 476px;
-   padding-top: 25px;
+    padding-top: 5px;
 }
 
 
@@ -54,4 +61,34 @@ font-size: 16px;
 .fa-star.empty{
     color: rgb(92, 38, 38);
 
+}
+p {
+    margin: 0em;
+  }
+
+footer{
+    background-color: #0A0826;
+    color: white ;
+    width: 1440px;
+    height: 239px;
+    left: 0px;
+    top: 3067px    
+    font-size: xx-small;
+
+}
+@media only screen and (max-width: 688px){
+    .flex{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid{
+        grid-template-columns: repeat(1 ,1fr);
+    }  
+}
+@media only screen and (min-width: 689px) and (max-width:992px){
+    .flex{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid{
+        grid-template-columns: repeat(2 ,1fr);
+    }  
 }
