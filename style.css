@@ -1,4 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+}
 
+.flex{
+    display: flex;
+ 
+}
+.size{
+    width: 582px;
+    height: 320px;
+}
+.flex img{
+    width: 440px;
+    height: 414px;
+}
+.main{
+    padding left: 65px;
+}
 .align{
     text-align: center;
 }
@@ -8,10 +28,10 @@
     grid-template-columns: repeat(3 ,1fr);
 }
 .popular-collection{
+    background-color: white;
     width: 329px;
     height: 476px;
-    left: 996px;
-    top: 922px;
+   padding-top: 25px;
 }
 
 
