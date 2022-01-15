@@ -1,3 +1,4 @@
+/* font link  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
@@ -81,9 +82,23 @@ p {
   }
 .right{
     color: #E02C6D;
-    text-align: right;
-  
-    
+    text-align: right; 
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin: 5px;
+    font-size: 40px;
+    padding: 5px;
+}
+nav li:hover{
+background-color: coral;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
 }
 footer{
     text-align: center;
@@ -96,7 +111,6 @@ footer{
     font-size: xx-small;
 
 }
-
 @media only screen and (max-width: 688px){
     .flex{
         grid-template-columns: repeat(1, 1fr);
